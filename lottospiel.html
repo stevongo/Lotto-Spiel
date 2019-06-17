@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lotto</title>
+    <link rel="stylesheet" href="../../lib/css/main.css">
+    <style>
+        body {
+            width: 400px;
+        }
+        .field {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 20px;
+            float: left;
+        }
+        #container {
+            overflow: hidden;
+        }
+        .cross {
+            position: relative;
+            display: inline-block;
+        }
+        .cross::before,
+        .cross::after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+        .cross::before {
+            border-bottom: 2px solid #f00;
+            -webkit-transform:
+                skewY(-45deg);
+            transform: skewY(-45deg);
+        }
+        .cross::after {
+            border-bottom: 2px solid #f00;
+            -webkit-transform: skewY(45deg);
+            transform: skewY(45deg);
+        }
+        #fields {
+            overflow: hidden;
+        }
+    </style>
+    <script src="../../lib/js/lib.js"></script>
+    <script src="exercise_02_demo.js"></script>
+    <script src="exercise_02.js"></script>
+</head>
+
+<body>
+    <h1>Lotto</h1>
+    <noscript>
+        <b>Bitte aktivieren Sie JavaScript um den vollen Funktionsumfang der Seite nutzen zu können.</b>
+    </noscript>
+
+
+    <h2>Lottoschein</h2>
+    <div id="fields">
+        <div class="field">1</div>
+        <div class="field">2</div>
+        <div class="field">3</div>
+        <div class="field">4</div>
+        <div class="field">5</div>
+        <div class="field">6</div>
+        <div class="field">7</div>
+        <div class="field">8</div>
+        <div class="field">9</div>
+        <div class="field">10</div>
+        <div class="field">11</div>
+        <div class="field">12</div>
+        <div class="field">13</div>
+        <div class="field">14</div>
+        <div class="field">15</div>
+        <div class="field">16</div>
+        <div class="field">17</div>
+        <div class="field">18</div>
+        <div class="field">19</div>
+        <div class="field">20</div>
+        <div class="field">21</div>
+        <div class="field">22</div>
+        <div class="field">23</div>
+        <div class="field">24</div>
+        <div class="field">25</div>
+        <div class="field">26</div>
+        <div class="field">27</div>
+        <div class="field">28</div>
+        <div class="field">29</div>
+        <div class="field">30</div>
+        <div class="field">31</div>
+        <div class="field">32</div>
+        <div class="field">33</div>
+        <div class="field">34</div>
+        <div class="field">35</div>
+        <div class="field">36</div>
+        <div class="field">37</div>
+        <div class="field">38</div>
+        <div class="field">39</div>
+        <div class="field">40</div>
+        <div class="field">41</div>
+        <div class="field">42</div>
+        <div class="field">43</div>
+        <div class="field">44</div>
+        <div class="field">45</div>
+        <div class="field">46</div>
+        <div class="field">47</div>
+        <div class="field">48</div>
+        <div class="field">49</div>
+    </div>
+    <div id="tip">
+        <h2>Ihr Tipp</h2>
+        <p></p>
+    </div>
+    <div id="controls"><input id="draw" type="button" value="Starte Ziehung"><input id="restart" type="button"
+            value="Neu Starten"></div>
+    <div id="result">
+        <h2>Auswertung</h2>
+    </div>
+</body>
+
+</html>
