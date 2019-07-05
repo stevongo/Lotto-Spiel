@@ -1,0 +1,40 @@
+body {
+    width: 400px;
+}
+.field {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 20px;
+    float: left;
+}
+#container {
+    overflow: hidden;
+}
+.cross {
+    position: relative;
+    display: inline-block;
+}
+.cross::before,
+.cross::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.cross::before {
+    border-bottom: 2px solid #f00;
+    -webkit-transform:
+        skewY(-45deg);
+    transform: skewY(-45deg);
+}
+.cross::after {
+    border-bottom: 2px solid #f00;
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+}
+#fields {
+    overflow: hidden;
+}
